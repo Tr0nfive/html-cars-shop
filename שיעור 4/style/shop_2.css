@@ -1,30 +1,56 @@
 .car_img {
 
-    height: 250px;
-    width: 25%;
+   
+    height: auto;
+ display: block;
 }
 
 .grid1 {
     display: grid;
     grid-template-areas:
-
-        'aside' 'cars' 'cars' 'cars'
+        'nav' 'nav' 'nav' 'nav'
+        'aside' 'cars' 'cars' 'cars'       
         'footer' 'footer' 'footer' 'footer'
     ;
-    gap: 5px;
+    
+    grid-template-columns: repeat(2,auto);
+    
+    grid-template-rows: repeat(3,auto);
+    
+}
+.nav{
+    grid-area: nav;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 .cars {
-    grid-area: auto;
+    display: grid;
+    grid-template-areas: 
+    'cars1' 'cars1' 'cars1'
+    'cars1' 'cars1' 'cars1';
+    grid-template-columns: repeat(3,auto);
+    row-gap: 10px;
+    
 }
 .cars_grid {
-    grid-template-columns: 250px 250px 250px ;
-    grid-area: auto;
-    justify-content: center;
+    grid-area: cars;
+    grid-area: cars1;
     align-items: center;
+    position: relative;
 }
 .aside{
-    grid-template-columns: 1fr;
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: 50px;
 }
 .footer{
+grid-area: "footer";
+}
+
+
+
+.cars_grid > button{
+position: absolute;
+
 
 }
