@@ -1,7 +1,8 @@
 .car_img {
 
    
-    height: auto;
+    height: 25%;
+    width: 22vw;
  display: block;
 }
 
@@ -30,13 +31,14 @@
     'cars1' 'cars1' 'cars1';
     grid-template-columns: repeat(3,auto);
     row-gap: 10px;
+
     
 }
 .cars_grid {
     grid-area: cars;
     grid-area: cars1;
-    align-items: center;
-    position: relative;
+   justify-content: center;
+
 }
 .aside{
     grid-area: aside;
@@ -49,8 +51,41 @@ grid-area: "footer";
 
 
 
-.cars_grid > button{
+.desc button{
+
+border-color: transparent;
+background-color: transparent;
+font-size: 20px;
+text-transform: capitalize;
+color:goldenrod;
+float: left ;
+margin-left: 2vw;
+
+}
+
+.desc button:hover{
+opacity: 50%;
+}
+button span{
+   margin-left: 10vw;
+}
+.must{
+    height: 24%;
+}
+.cars_grid{
+    
+   position: relative;
+}
+body{
+   
+    background: linear-gradient(90deg, rgba(179,216,19,1) 0%, rgba(9,121,26,1) 35%, rgba(0,95,255,1) 100%);
+}
+.cars_grid .zoom{
 position: absolute;
+display: block;
+height: 2vh;
+width: 1vw;
 
 
+   
 }
