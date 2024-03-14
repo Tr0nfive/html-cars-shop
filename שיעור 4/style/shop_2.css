@@ -131,19 +131,20 @@ left: 25px;
 .zoom:hover {
     
    
-     .enlarge{
-        position: sticky;
+    .enlarge{
+        position: relative;
         z-index: 99;
         display: block;
-         margin-top: 300px;
-         margin-left: 500px;
-        transform: scale(1000%);
+        margin-top :25vh;
+         /* margin-top: 300px;
+         margin-left: 500px; */
+        transform: scale(750%);
+        
 
      }
+     .enlarge1{
+        left: 30vw;
+        bottom: 5vw;
+     }
      
-}
-body>.zoom:hover{
-    background-color: white;
-z-index: 98;
-
 }
