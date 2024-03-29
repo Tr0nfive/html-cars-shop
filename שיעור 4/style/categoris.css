@@ -1,0 +1,20 @@
+
+
+
+input[type="range" i]{
+appearance: none !important;
+background: black;  
+}
+body{
+    background-color:  violet;
+}
+
+#priceRange{
+    position: relative;
+    margin-top: 20px;
+}
+#range-value{
+    position: absolute;
+    margin-left: 5vh;
+
+}

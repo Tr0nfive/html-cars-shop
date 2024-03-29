@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./range.java">
+    <link rel="stylesheet" href="./style/categoris.css">
+    
 </head>
-<form>
+<body>
+    <script src="./js/catagoris.js" defer></script>
+    
+    <form>
     
     
     <input type="checkbox" name="hundei" id="hundei" value="haundi">
@@ -27,14 +31,14 @@
     <input type="checkbox" name="Tesla" id="Tesla">
     <label for="Tesla">Tesla</label><br>
 
+    
+    <div class="contianer">
     <label for="priceRange">starting price</label><br>
-
-    <output name="x" for="priceRange"></output><br>
-    <input type="range" id="priceRange" name="priceRange" max="1000000" min="5" step="1" value="0"
-    oninput="x.value = priceRange.value"
-    onchange="x.value =value"
-    >
-    <br>
+    <span id="range-value" class="slider-value">0</span>
+    <input type="range" id="priceRange" name="priceRange" max="1000000" min="5" step="1" value="0">
+    </div>
+    
+    
     <div>
         <input type="checkbox" id="" name="">
 
@@ -69,3 +73,4 @@
 
 </body>
 </html>
+
