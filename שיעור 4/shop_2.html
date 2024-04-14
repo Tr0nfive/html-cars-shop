@@ -8,79 +8,98 @@
   <link rel="stylesheet" href="./style/main_css.css">
 
 </head>
-
 <body class="grid1">
-  <header class="nav">
-    <embed src="./nav.html" type="text/html" style="width:100%; ">
+  
+  <script src="./js/shop_2.js" defer></script>
+  
+
+<header class="nav">
+  <embed src="./nav.html" type="text/html" style="width:100%; ">
   </header>
-
+  
   <main class="cars " >
-
+    <!-- nissan -->
     <div >
       <div class="cars_grid ">
-        <a target="_parent" href="./nissan_qashqai2020.html">
-          <img  src="./images/nissan qashqai 2020.jpg" alt="nissan qashqai" class="car_img">
-          <div class="zoom">
-           <img src="./images/zoom icon.png" alt="zoom" ><embed src="./images/nissan qashqai 2020.jpg" type=""class="enlarge enlarge1">
-          </div>
-            
-        </a>
+        
+        <img  src="./images/nissan qashqai 2020.jpg" alt="nissan qashqai" class="car_img">
+        
+      </div>
+      
+      <div id="overlay1" class="overlay" >
+        <img src="./images/nissan qashqai 2020.jpg" id="nis_chg_img"  alt="">
+        <embed src="./nissan_qashqai2020.html" type="" class="embd">
+       <button class="left" onclick="Change_nissan_left()"></button>
+          <button class="close" onclick="off()"></button>
       </div>
       <div class="desc">
-        <p>
-        </p>
-        <button>nissan qashqai <span> 5$</span> </button>
+        
+        <button id="OverLayBtn" value="overlay1" onclick="on(1)">nissan qashqai <span> 5$</span> </button>
+        
+         <!-- mustang -->
+        
       </div>
     </div>
     <div >  
       <div class="cars_grid">
-        <a target="_parent" href="./mustang.html">
           <img src="./images/classic mustang1.jpg" alt="Mustang" class="car_img must">
-          <div class="zoom">
-            <img src="./images/zoom icon.png" alt="zoom" ><embed src="./images/classic mustang1.jpg" type=""class="enlarge">
-           </div>
-        </a>
+      </div>
+      <div id="overlay2" class="overlay" >
+        <img src="./images/classic mustang1.jpg" id=""  alt="">
+        <embed src="./mustang.html" type="" class="embd">
+        <button class="close" onclick="off()"></button>  
+         
+      
       </div>
       <div class="desc">
         <p>
         </p>
-        <button>Mustang  <span>5000$</span></button>
+        <button onclick="on(2)">Mustang  <span>5000$</span></button>
       </div>
     </div >
+
+<!-- ferrai -->
+
     <div>
       <div class="cars_grid">
-        <a target="_parent" href="./ferrai.html">
           <img src="./images/ferrai.jpg" alt="Ferrai" class="car_img">
-          <div class="zoom">
-            <img src="./images/zoom icon.png" alt="zoom" ><embed src="./images/ferrai.jpg" type=""class="enlarge">
-           </div>
-        </a>
       </div>
       <div class="desc">
 
         <p>
 
         </p>
-        <button>Ferrai  <span>500000$</span>   </button>
-        
+        <button onclick="on(3)">Ferrai  <span>500000$</span>   </button>
+        <div id="overlay3" class="overlay" >
+          <img src="./images/ferrai.jpg" id="nis_chg_img"  alt="">
+          <embed src="./ferrai.html" type="" class="embd">
+            <button class="close" onclick="off()"></button>
+        </div>
+        <!-- Lamborgoni -->
+ 
+
       </div>
     </div>
     <div >
-      <div class="cars_grid">
-        <a target="_parent" href="./lamborgini.html">
+      <div class="cars_grid">     
           <img src="./images/lamorgini.jpg" alt="Lamborgini" class="car_img" >
-          <div class="zoom">
-            <img src="./images/zoom icon.png" alt="zoom" ><embed src="./images/lamorgini.jpg" type=""class="enlarge enlarge1">
-           </div>
-        </a>
+         
       </div>
       <div class="desc">
 
         <p>
 
         </p>
-        <button>Lamborgini</button>
+        <button onclick="on(4)">Lamborgini <span>500000$</span>   </button>
+        <div id="overlay4" class="overlay" >
+          <img src="./images/lamorgini.jpg" id=""  alt="">
+          <embed src="./lamborgini.html" type="" class="embd">
+          <button class="close" onclick="off()"></button>  
+           
+        
+        </div>
       </div>
+      
     </div>
 
     

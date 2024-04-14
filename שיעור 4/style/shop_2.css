@@ -5,7 +5,7 @@
 .car_img {
 
    
-    height: 35%;
+   max-height: 35%;
     width: 28vw;
  display:block;
  position: relative;
@@ -28,9 +28,11 @@
 }
 .nav{
     grid-area: nav;
-    position: sticky;
+    display:flex;   
+    position: sticky !important;
     grid-column-start: 1;
     grid-column-end: 3;
+    z-index: 2;
 }
 .cars {
     display: grid;
@@ -55,6 +57,7 @@
     grid-area: cars;
     grid-area: cars1;
     justify-content: center;
+    z-index: 2;
     
 }
 @media only screen and (max-width: 950px) {
@@ -68,15 +71,17 @@
         grid-template-columns:auto;
     }
     .car_img{
-        width: 55vw;
-        height: 55%;
+        width: 30%;
+        height: 45%;
+        object-fit: cover;
     }
     
 }
 .aside{
     grid-area: aside;
     display: grid;
-    grid-template-columns: 50px;
+    grid-template-columns: 10vh;
+    
 }
 .footer{
 grid-area: "footer";
@@ -134,7 +139,7 @@ left: 25px;
    
     .enlarge{
         position: relative;
-        z-index: 99;
+        z-index: 3  ;
         display: block;
         margin-top :25vh;
          /* margin-top: 300px;
@@ -155,8 +160,66 @@ left: 25px;
 
 .catagoris{
     width: 10vw;
+    min-width: 10vh;
     min-height: 100vh;
     padding: 0px;
     margin: 0px;
 top: -5px;
+
+}
+.overlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 7;
+    background-color: black 50%;
+ cursor: pointer;
+ 
+}
+.embd {
+    position: absolute;
+  
+  left: 25%;
+  width:50% ;
+  height: 100%;
+  
+  z-index: 7;
+  overflow-y:scroll;
+  
+}
+.overlay > img{
+width: 50%;
+height: 50%;
+}
+.left {
+    position: absolute  ;
+   
+    background-image:  url(../images/left\ arrow.png);
+    z-index: 12;
+    left: 25%;
+    width: 4.5vw;
+    height: 10%;
+    top:40%;
+    object-fit: contain;
+    opacity: 0.8;
+display: block;
+background-repeat: no-repeat;
+}
+.close{
+position: absolute;
+z-index: 12;
+background-image: url(../images/close\ x.png);
+width: 4.5%;
+height: 10%;
+top: 0%;
+left: 25%;
+object-fit: cover ;
+background-repeat: no-repeat;
+
+
 }
