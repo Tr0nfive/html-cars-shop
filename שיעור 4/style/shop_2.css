@@ -121,39 +121,7 @@ body{
    background-color: black;
 }
 
-.zoom{
-position:absolute;
-display: block;
-height: 3vh;
-width: 2vw;
-top: 5px;
-left: 25px;
 
-}
-.zoom .enlarge{
-    
-    display: none;
-}
-.zoom:hover {
-    
-   
-    .enlarge{
-        position: relative;
-        z-index: 3  ;
-        display: block;
-        margin-top :25vh;
-         /* margin-top: 300px;
-         margin-left: 500px; */
-        transform: scale(750%);
-        
-
-     }
-     .enlarge1{
-        left: 30vw;
-        bottom: 5vw;
-     }
-     
-}
 
 .catagoris{
     width: 10vw;
@@ -164,11 +132,29 @@ left: 25px;
 top: -5px;
 
 }
+
+.grid-overlay{
+      display: grid;
+grid-template-areas: 
+none "overlay" "overlay" none
+none "overlay" "overlay" none
+
+;
+grid-template-columns: (4,1fr) ;
+grid-template-rows: (2,1fr);
+}
+.grid-inoverlay{
+    display: grid;
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+}
+
 .overlay{
     position: fixed;
-    display: none;
-   max-width: 100vw;
-    height: 1   vh ;
+ width: 100vw;
+visibility: hidden;
     top: 0;
     left: 0;
     bottom: 0;
@@ -232,6 +218,9 @@ height: 100%;
 .overlay p {
 color :white;
 display: block;
+background-color: black;
+
+
 }
 .overlay h1{
 color:white ;
@@ -239,4 +228,22 @@ color:white ;
 .overlay button{
     border: 1px white;
     border-radius: 2px;
+}
+.right {
+    position: absolute;
+    top: 43%;
+    z-index: 12;
+    left: 53%;
+    width: 3vw;
+    height: 5vh;
+    background-image: url(../images/right\ arrow.png);
+    object-fit: contain;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#overlay1,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6{
+    display: grid;
+    grid-area: "overlay";
 }

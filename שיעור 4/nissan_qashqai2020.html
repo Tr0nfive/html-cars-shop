@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nissan Qashqai 2020 Specs |DA turbo service for faster life</title>
-    <link rel="stylesheet" href="./style/main_css.css">
+    
     <link rel="stylesheet" href="./style/car_inner.css">
    
 </head>
@@ -12,7 +12,8 @@
     
     
     
- <main>
+ <main class="grid_carInfo">
+   <div id="buttens">
     <button id="red" class="but" name="red"></button>
     <button id="orange" class="but"></button>
     <button id="yellow" class="but"></button>
@@ -23,8 +24,38 @@
     <button id="purple" class="but"></button>
     <button id="teal" class="but"></button>
     <button id="grey" class="but"></button>
-    <input type="color" name="" id="cous">
-   
+    <input type="color" name="coustom" id="cous">
+    </div>
+
+    <div id="info">
+        <button  id="forLESS" class="disable">for less informatin</button>
+        <button  id="forMore" >for more informatin </button>
+
+        <div>
+        <p id="information">
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolores totam velit repellat corrupti maxime, vitae autem blanditiis temporibus quae deserunt, obcaecati perferendis dolorum! Id necessitatibus mollitia enim quia quaerat?
+        </p>
+      </div>
+   </div>
+   <script>
+       var info = document.getElementById("information");
+       var forMore  =document.getElementById("forMore");
+       var forLESS = document.getElementById("forLESS");
+    forMore.onclick =  function  (){
+        info.style.visibility = "visible";
+        forMore.style.visibility = "collapse";
+        forLESS.style.visibility = "visible";
+    }
+   window.onload = forLESS.onclick =  function (){
+        info.style.visibility = "collapse"
+        forMore.style.visibility = "visible"
+        forLESS.style.visibility = "collapse";
+    }
+    
+   </script>
+
+
  </main>
 </body>
 </html>
