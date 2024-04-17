@@ -1,0 +1,44 @@
+.but{
+  border-radius: 3px;
+  height: 5vh;
+  width: 5vw;
+  padding-left: 3vw;
+  border: 1px white;
+}
+
+#red{
+  background-color: red;
+  
+}
+#cous{
+  height: 5vh;
+  width: 5vw;
+
+}
+#orange{
+  background-color: orange;
+}
+#black{
+  background-color: black;
+}
+#yellow{
+  background-color: yellow;
+}
+#grey{
+  background-color: grey;
+}
+#white{
+  background-color: white;
+}
+#green{
+  background-color: green;
+}
+#blue{
+  background-color: blue;
+}
+#purple{
+  background-color: purple;
+}
+#teal{
+  background-color: teal;
+}
