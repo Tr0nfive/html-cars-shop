@@ -83,20 +83,21 @@
     
       .btn-field{
         width:100%;
-        display: flex;
-        justify-content: space-between;
+        display:block;
+        
       }
     
       .btn-field button{
-        flex-basis: 48%;
+      width: 10vw;
         background: #aa0707;
         color: #fff;
         height: 40px;
-        border-radius: 20px;
-        border: 0;
+        border-radius: 15px;
+        
         outline: 0;
         cursor: pointer;
-        transition: background 1s;
+        
+        
       }
     
       .input-group{

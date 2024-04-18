@@ -10,8 +10,7 @@ body{background-color: black;}
   border: 1px white;
 }
 .but :active{
-  border-color: 4px solid pink ;
-  border-color: inherit solid 1px ;
+  border-color: pink 2px solid;
 }
 #buttens button:hover{
   border: 2px solid cyan;

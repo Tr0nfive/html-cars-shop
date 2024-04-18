@@ -23,11 +23,11 @@ if(Value==6){
   function off() {
     
     document.getElementById(overlays[0]).style.visibility = "hidden";
-    document.getElementById(overlays[2]).style.visibilityjh = "hidden";
-    document.getElementById(overlays[3]).style.visibilityjh = "hidden";
-    document.getElementById(overlays[5]).style.visibilityjh = "hidden";
-    document.getElementById(overlays[4]).style.visibilityjh = "hidden";
-    document.getElementById(overlays[1]).style.visibilityjh = "hidden";
+    document.getElementById(overlays[1]).style.visibility = "hidden";
+    document.getElementById(overlays[2]).style.visibility = "hidden";
+    document.getElementById(overlays[3]).style.visibility = "hidden";
+    document.getElementById(overlays[5]).style.visibility = "hidden";
+    document.getElementById(overlays[4]).style.visibility = "hidden";
     
     
   //  document.getElementById(overlays.active).style.display = "none";

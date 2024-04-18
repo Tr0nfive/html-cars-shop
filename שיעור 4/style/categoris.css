@@ -3,10 +3,10 @@
 
 input[type="range" i]{
 appearance: none !important;
-background: black;  
+background: white;  
 }
 body{
-    background-color:  violet;
+    background-color:  black;
 }
 
 #priceRange{
@@ -16,5 +16,10 @@ body{
 #range-value{
     position: absolute;
     margin-left: 5vh;
-
+align-items: center;
+    color: white;
 }
+label{
+    color: white;
+}
+
