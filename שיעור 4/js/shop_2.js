@@ -11,12 +11,12 @@ function on(value) {
  if(value==4){
    document.getElementById(overlays[3]).style.visibility = "visible";
  }
- if(value==5){
-  document.getElementById(overlays[4]).style.visibility = "visible";
- }
-if(Value==6){
-  document.getElementById(overlays[5]).style.visibility = "visible";
-}
+//  if(value==5){
+//   document.getElementById(overlays[4]).style.visibility = "visible";
+//  }
+// if(Value==6){
+//   document.getElementById(overlays[5]).style.visibility = "visible";
+// }
 
 
 }

@@ -1,99 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
 .main {
-    background-color: #141414;
-  }
-  
-  .main__container {
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    height: 90vh;
-    background-color: #131313;
-    width: 100%;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-  
-  .main__content {
-    color: #fff;
-    width: 100%;
-  }
-  
-  .main__content h1 {
-    font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-size: 100%;
-    
-    -moz-text-fill-color: transparent;
-  }
-  
-  .main__content h2 {
-    font-size: 4rem;
-    margin-top: 10px;
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-    background-size: 100%;
-  
-    -moz-text-fill-color: transparent;
-    
-  }
-  
-  .main__content p {
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-    color:#b721ff;
-  }
-  
-  .main__btn {
-    font-size: 1rem;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-    outline: none;
-  }
-  
-  .main__btn a {
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .main__btn:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #4837ff;
-    transition: all 0.35s;
-    border-radius: 4px;
-  }
-  
-  .main__btn:hover {
-    color: #fff;
-  }
-  
-  .main__btn:hover:after {
-    width: 100%;
-  }
-  
-  .main__img--container {
-    text-align: center;
-  }
-  
-  #main__img {
-    height: 80%;
-    width: 80%;
-  }
+  background-color: #141414;
+}
 
+.main__container {
+  display: flex;  
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  margin: 0 auto;
+  height: 90vh;
+  background-color: black;
+  width: 100%;
+  padding: 0 50px;
+}
 
+.main__content {
+  color: #fff;
+  width: 100%;
+}
 
+.main__content h1 {
+  margin-bottom: 80px;
+  font-size: 4rem; /* Adjust font size as needed */
+  font-weight: bold; /* Apply bold font */
+  background-color: #ff8177; /* Background color for headline */
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main__content h2 {
+  margin-top: 10px;
+  background-color: #ff8177; /* Background color for headline */
+  background-image: linear-gradient(to top, #ff0844 0%, #ffa500 100%);
+  background-size: 100%;
+  font-size: 2rem;
+  align-items: left;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main__content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-align: center; /* Center text */
+  font-weight: bold; /* Apply bold font */
+  background-color: #ff8177; /* Background color for headline */
+  background-image: linear-gradient(to top, #ff0844 0%, #ffa500 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main__content { 
+  text-align: center; /* Center text */
+}
+
+.main__btn {
+  margin-top: 40px;
+  font-size: 1rem;
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.35s, color 0.35s; /* Add color transition */
+  outline: none;
+}
+
+.main__btn:hover {
+  background: #813535; /* Change background color on hover */
+  color: #fff; /* Ensure text remains visible */
+}
+
+.main__container a  {
+  text-decoration: none;
+  color: white;
+}

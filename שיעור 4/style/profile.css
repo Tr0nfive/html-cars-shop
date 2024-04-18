@@ -1,0 +1,88 @@
+.profile-container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(179, 122, 72), rgba(42, 23, 23, 0.8)), url(../images/car\ login\ background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.profile-form-box {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: left; /* Align text to the left */
+}
+
+.profile-form-box h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #aa0707;
+    position: relative;
+}
+
+.profile-form-box h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #aa0707;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+}
+
+.profile-input-field {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.profile-input-field input {
+    width: calc(100% - 30px); /* Adjusted to account for icon */
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.profile-input-field i {
+    margin-left: 15px;
+    color: #999;
+}
+
+.profile-btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+}
+
+.profile-btn-field button {
+    background: #aa0707;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.profile-btn-field button:hover {
+    background: #8a0505; /* Darker color on hover */
+}
+
+.profile-btn-field button.disable {
+    background: #eaeaea;
+    color: #555; 
+}
