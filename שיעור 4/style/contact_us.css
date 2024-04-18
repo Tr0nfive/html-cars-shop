@@ -1,0 +1,10 @@
+#hello{
+    background-image: url(../images/backround2.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+  }
+  .closing{
+    background-color:crimson ;
+    text-align: center;
+    font-size: 200%;
+  }
