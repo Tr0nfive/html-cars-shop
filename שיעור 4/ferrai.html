@@ -8,51 +8,32 @@
     
 </head>
 <body>
-    <header>
-        <embed src="./nav.html" type="text/html" style="width:100%; " >
-    </header>
-
-   <main>
-    <img class="car" src="./images/ferrai.jpg" alt="" class="car">
-    <table>
-        <caption>mustang(year)</caption>
-        <tr>
-            <th>year</th>
-            <th>HR</th>
-            <th>Gearbox</th>
-            <th>fuel type</th>
-            <th>engine capasity</th>
-            
-        </tr>
-        <tr>
-            <th>1964</th>
-            <td>264</td>
-            <td>manual</td>
-            <td>95</td>
-            <td>4736</td>
-        </tr>
-        <tr>
-            <th>1973</th>
-            <td>285</td>
-            <td>manul</td>
-            <td>95</td>
-            <td>5752</td>
-        </tr>
-        <tr>
-            <th>1979</th>
-            <td>228</td>
-            <td>manual</td>
-            <td>95</td>
-            <td>4842</td>
-        </tr>
-        <tr>
-        <th>2004</th>
-        <td>390</td>
-        <td>manual</td>
-        <td>95</td>
-        <td>4601</td>
-        </tr>
-    </table>
+ <script src="./js/car_inner.js" defer></script>
+    <main class="grid_carInfo">
+        <div id="buttens">
+         <button id="red" class="but" name="red"></button>
+         <button id="orange" class="but"></button>
+         <button id="yellow" class="but"></button>
+         <button id="green" class="but"></button>
+         <button id="blue" class="but"></button>
+         <button id="black" class="but"></button>
+         <button id="white" class="but"></button>
+         <button id="purple" class="but"></button>
+         <button id="teal" class="but"></button>
+         <button id="grey" class="but"></button>
+         <input type="color" name="coustom" id="cous">
+         </div>
+     
+         <div id="info">
+             <button  id="forLESS" class="disable">for less informatin</button>
+             <button  id="forMore" >for more informatin </button>
+     
+             <div>
+             <p id="information">
+     
+                Engine capacity: 3900 Fuel consumption: 8.3 km per liter Transmission Type: Manual Infection: 15 Safety: 4 extinguishing Car size and weight: Length: 4.6 m Width: 1.98 m Height: 1.2 m Weight: 1435             </p>
+           </div>
+        </div>
    </main>
     
 </body>
