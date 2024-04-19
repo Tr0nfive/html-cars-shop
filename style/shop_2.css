@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+}
+
+.car_img {
+
+   
+   max-height: 35%;
+    width: 28vw;
+ display:block;
+ position: relative;
+
+}
+
+.grid1 {
+    display: grid;
+    grid-template-areas:
+        'nav' 'nav' 'nav' 'nav'
+        'aside' 'cars' 'cars' 'cars'       
+        'footer' 'footer' 'footer' 'footer'
+    ;
+    
+    grid-template-columns: repeat(2,auto);
+    
+    grid-template-rows: repeat(3,auto);
+    padding: 0px;
+    margin: 0px;
+}
+.nav{
+    grid-area: nav;
+    display:flex;   
+    position: sticky !important;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    z-index: 2;
+}
+.cars {
+    display: grid;
+    grid-template-areas: 
+    'cars1' 'cars1' 'cars1'
+    'cars1' 'cars1' 'cars1';
+    grid-template-columns: repeat(3,auto);
+    row-gap: 5px;
+    width: 100%;
+    
+}
+
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;    
+}
+
+
+.cars_grid {
+    grid-area: cars;
+    grid-area: cars1;
+    justify-content: center;
+    z-index: 2;
+    
+}
+@media only screen and (max-width: 950px) {
+    .cars{
+       
+        grid-template-areas:
+        'cars1'
+        'cars1'
+        'cars1' 
+        ;
+        grid-template-columns:auto;
+    }
+    .car_img{
+       max-width: 50%;
+       max-height: 60%;
+        /* object-fit: cover;*/
+    } 
+    
+}
+.aside{
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: 10vh;
+    
+}
+.footer{
+grid-area: "footer";
+}
+
+
+
+.desc button{
+
+border-color: transparent;
+background-color: transparent;
+font-size: 20px;
+text-transform: capitalize;
+color:goldenrod;
+float: left ;
+margin-left: 2vw;
+
+}
+
+.desc button:hover{
+opacity: 50%;
+}
+button span{
+   margin-left: 10vw;
+}
+.must{
+    height: 24%;
+}
+.cars_grid{
+    
+   position: relative;
+  
+ 
+}
+body{
+   
+   background-color: black;
+}
+
+
+
+.catagoris{
+    width: 10vw;
+    min-width: 10vh;
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+top: -5px;
+
+}
+
+.grid-overlay{
+      display: grid;
+grid-template-areas: 
+none "overlay" "overlay" none
+none "overlay" "overlay" none
+
+;
+grid-template-columns: 25% 35% 15% 25% ;
+grid-template-rows: repeat(2,50%);
+}
+.grid-inoverlay{
+    display: grid;
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    background-color: black;
+    /* grid-template-areas: 
+    "car" "price"
+    "embd" "embd";  */
+}
+@media only screen and (max-width: 950px) {
+    .grid-overlay{
+        display: grid;
+        grid-template-areas: 
+        "overlay" 
+        "overlay"         
+        ;
+        grid-template-columns: 100%;
+        grid-row: 100%;        
+    }
+    .grid-inoverlay{
+        display: grid;
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
+        background-color: black;
+    }
+    .close{
+        position: absolute;
+        z-index: 12;
+        background-image: url(../images/close\ x.png)  ;
+        width: 5% !important;
+        height: 5vh !important;
+        top: 0%;
+        left: 0% !important;
+        
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-origin: border-box;
+    }
+    .img_overlay{
+        position :relative;
+        /* padding: 2vh 2vw 2vh 1vw; */
+        background-color: black;
+        object-fit: scale-down;
+        width: 100%;
+        height: 100%;
+        grid-area: "car";
+        grid-row: 1/5;
+        grid-column:1/5;
+        transition: 1s;
+        }
+        .left { 
+            top:45%;
+            left: 0% !important;
+            width: 6vw !important;
+        }
+        .right{
+            right: 0% !important;
+            width: 5vw !important;
+        }
+       
+
+}
+
+.overlay{
+    position: fixed;
+ width: 100vw;
+visibility: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 7;
+
+ cursor: pointer;
+ 
+}
+.embd {
+   
+    grid-area: "embd";
+  
+  width:100% ;
+  height: 100%;
+  grid-row: 2/3;
+  grid-column: 1 / 3;
+  z-index: 7;
+  overflow-y:scroll;
+  
+}
+
+.left {
+    position: absolute  ;
+   
+    background-image:  url(../images/left\ arrow.png);
+    z-index: 12;
+    left: 25%;
+    width: 3%;
+    height: 7%;
+    top:35%;
+    background-size: contain;
+    opacity: 0.8;
+display: block;
+background-repeat: no-repeat;
+}
+.close{
+position: absolute;
+z-index: 12;
+background-image: url(../images/close\ x.png)  ;
+width: 2%;
+height: 4.5%;
+top: 0%;
+left: 25%;
+
+background-repeat: no-repeat;
+background-size: contain;
+background-origin: border-box;
+
+}
+.close:hover{
+    border: black 2px solid;
+}
+.img_overlay{
+position :relative;
+/* padding: 2vh 2vw 2vh 1vw; */
+background-color: black;
+/* object-fit: scale-down; */
+width: 100%;
+height: 100%;
+grid-area: "car";
+grid-row: 1/2;
+grid-column:1/3;
+transition: 1s;
+}
+/* .img_overlay:hover{
+    transition-delay: 1s;
+    position: absolute;
+    transform: translatey(50%);
+    z-index: 20;
+    transform: scale(1.5);
+} */
+
+.overlay >.grid-inoverlay> p, .overlay >.grid-inoverlay>h2 {
+
+background-color: black;
+grid-area: "price";
+grid-row: 1/2;
+grid-column: 2/3;
+position: relative;
+}
+.text{
+    color :white;
+padding: 0px;
+display: block;
+align-items: center;
+top: 50%;
+display: block;
+}
+.overlay h2{
+color:white ;
+}
+.overlay button{
+    border: 1px white;
+    border-radius: 2px;
+}
+.right {
+    position: absolute;
+    background-image: url(../images/right\ arrow.png);
+    top: 35%;
+    z-index: 12;
+    right: 25%;
+    width: 3vw;
+    height: 5vh;
+    object-fit: contain;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#overlay1,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6{
+    display: grid;
+    grid-area: "overlay";
+}
