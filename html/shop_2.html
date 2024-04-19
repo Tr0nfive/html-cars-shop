@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE Shop Car</title>
+  <link rel="stylesheet" href="../style/main_css.css">
+  
+<body class="grid1">
+  
+  <script src="../js/shop_2.js" defer></script>
+  
+
+<header class="nav">
+  <embed src="./nav.html" type="text/html" style="width:100%;" class="navEmbed">
+  </header>
+  
+  <main class="cars " >
+    <!-- nissan -->
+    <div >
+      <div class="cars_grid ">
+        
+        <img  src="../images/nissan qashqai 2020.jpg" alt="nissan qashqai" class="car_img">
+        
+      </div>
+      
+      <div id="overlay1" class="overlay grid-overlay" >
+         <div class="grid-inoverlay">
+          <img src="../images/nissan qashqai 2020.jpg" id="nis_chg_img" class="img_overlay"  alt="">
+         
+          <embed src="./nissan_qashqai2020.html" type="" class="embd">
+          <button class="left" onclick="Change_nissan_left()"></button>
+          <button onclick="Change_nissan_right()" class="right"></button>
+          <button class="close" onclick="off()"></button>
+         </div> 
+      </div>
+      <div class="desc">
+        
+        <button id="OverLayBtn" value="overlay1" onclick="on(1)">nissan qashqai <span> 5$</span> </button>
+        
+         <!-- mustang -->
+        
+      </div>
+    </div>
+    <div >  
+      <div class="cars_grid">
+        
+          <img src="../images/classic mustang1.jpg" alt="Mustang" class="car_img must">
+       </div>
+      <div id="overlay2" class="overlay grid-overlay" >
+         <div class="grid-inoverlay"> 
+        <img src="../images/classic mustang1.jpg" id=""  alt="" class="img_overlay">
+       
+        <embed src="./mustang.html" type="" class="embd">
+        <button class="close" onclick="off()"></button>  
+         </div>
+      
+      </div>
+      <div class="desc">
+        <p>
+        </p>
+        <button onclick="on(2)">Mustang  <span>5000$</span></button>
+      </div>
+    </div >
+
+<!-- ferrai -->
+
+    <div>
+      <div class="cars_grid">
+          <img src="../images/ferrai.jpg" alt="Ferrai" class="car_img">
+      </div>
+      <div class="desc">
+
+        <p>
+
+        </p>
+        <button onclick="on(3)">Ferrai  <span>500000$</span>   </button>
+        <div id="overlay3" class="overlay grid-overlay" >
+          <div class="grid-inoverlay">
+          <img src="../images/ferrai.jpg"   alt="" class="img_overlay">
+          <embed src="./ferrai.html" type="" class="embd">
+            <button class="close" onclick="off()"></button>
+        </div>
+      </div>
+        <!-- Lamborgoni -->
+ 
+
+      </div>
+    </div>
+    <div >
+      <div class="cars_grid">     
+          <img src="../images/lamorgini.jpg" alt="Lamborgini" class="car_img" >
+         
+      </div>
+      <div class="desc">
+
+        <p>
+
+        </p>
+        <button onclick="on(4)">Lamborgini <span>500000$</span>   </button>
+        <div id="overlay4" class="overlay grid-overlay" >
+         <div class="grid-inoverlay"> 
+          <img src="../images/lamorgini.jpg" id=""  alt="" class="img_overlay">
+          <embed src="./lamborgini.html" type="" class="embd">
+          <button class="close" onclick="off()"></button>  
+           </div>
+        
+        </div>
+      </div>
+      
+    </div>
+
+    
+
+  </main>
+
+  <aside class="aside">
+ <embed src="./categoris.html" type="" class="catagoris">
+
+  </aside>
+
+
+
+  <footer class="footer">
+
+  </footer>
+</body>
+
+</html>

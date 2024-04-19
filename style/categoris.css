@@ -1,0 +1,25 @@
+
+
+
+input[type="range" i]{
+appearance: none !important;
+background: white;  
+}
+body{
+    background-color:  black;
+}
+
+#priceRange{
+    position: relative;
+    margin-top: 20px;
+}
+#range-value{
+    position: absolute;
+    margin-left: 5vh;
+align-items: center;
+    color: white;
+}
+label{
+    color: white;
+}
+
